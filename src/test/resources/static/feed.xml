@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xml:lang="en-US">
+	<id>tag:github.com,2008:/spring-cloud</id>
+	<link type="text/html" rel="alternate" href="https://github.com/spring-cloud"/>
+	<link type="application/atom+xml" rel="self" href="https://github.com/spring-cloud"/>
+	<title>spring-cloud’s Activity</title>
+	<updated>2016-03-28T19:03:50Z</updated>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3815762278</id>
+		<published>2016-03-28T19:03:50Z</published>
+		<updated>2016-03-28T19:03:50Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-task-app-starters"/>
+		<title type="html">spring-cloud added markpollack to spring-cloud/spring-cloud-task-app-starters</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markpollack&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markpollack&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-task-app-starters&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-task-app-starters&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-03-28T19:03:50Z&quot; is=&quot;relative-time&quot;&gt;Mar 28, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3775152877</id>
+		<published>2016-03-17T12:24:41Z</published>
+		<updated>2016-03-17T12:24:41Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-stream-binder-redis"/>
+		<title type="html">spring-cloud added markfisher to spring-cloud/spring-cloud-stream-binder-redis</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markfisher&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markfisher&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-stream-binder-redis&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-stream-binder-redis&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-03-17T12:24:41Z&quot; is=&quot;relative-time&quot;&gt;Mar 17, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3766734097</id>
+		<published>2016-03-15T19:49:38Z</published>
+		<updated>2016-03-15T19:49:38Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-stream-app-maven-plugin"/>
+		<title type="html">spring-cloud added markpollack to spring-cloud/spring-cloud-stream-app-maven-plugin</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markpollack&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markpollack&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-stream-app-maven-plugin&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-stream-app-maven-plugin&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-03-15T19:49:38Z&quot; is=&quot;relative-time&quot;&gt;Mar 15, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3766712145</id>
+		<published>2016-03-15T19:44:42Z</published>
+		<updated>2016-03-15T19:44:42Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-spinnaker"/>
+		<title type="html">spring-cloud added markpollack to spring-cloud/spring-cloud-spinnaker</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markpollack&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markpollack&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-spinnaker&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-spinnaker&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-03-15T19:44:42Z&quot; is=&quot;relative-time&quot;&gt;Mar 15, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3707452710</id>
+		<published>2016-03-01T15:48:04Z</published>
+		<updated>2016-03-01T15:48:04Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-stream-app-starters"/>
+		<title type="html">spring-cloud added markfisher to spring-cloud/spring-cloud-stream-app-starters</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markfisher&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markfisher&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-stream-app-starters&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-stream-app-starters&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-03-01T15:48:04Z&quot; is=&quot;relative-time&quot;&gt;Mar 1, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3702226952</id>
+		<published>2016-02-29T16:07:29Z</published>
+		<updated>2016-02-29T16:07:29Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-cloudfoundry-deployer"/>
+		<title type="html">spring-cloud added gregturn to spring-cloud/spring-cloud-cloudfoundry-deployer</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/gregturn&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;gregturn&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-cloudfoundry-deployer&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-cloudfoundry-deployer&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-02-29T16:07:29Z&quot; is=&quot;relative-time&quot;&gt;Feb 29, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3702226951</id>
+		<published>2016-02-29T16:07:29Z</published>
+		<updated>2016-02-29T16:07:29Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-cloudfoundry-deployer"/>
+		<title type="html">spring-cloud added markfisher to spring-cloud/spring-cloud-cloudfoundry-deployer</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markfisher&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markfisher&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-cloudfoundry-deployer&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-cloudfoundry-deployer&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-02-29T16:07:29Z&quot; is=&quot;relative-time&quot;&gt;Feb 29, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3702187268</id>
+		<published>2016-02-29T16:00:01Z</published>
+		<updated>2016-02-29T16:00:01Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-deployer"/>
+		<title type="html">spring-cloud added markfisher to spring-cloud/spring-cloud-deployer</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markfisher&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markfisher&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-deployer&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-deployer&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-02-29T16:00:01Z&quot; is=&quot;relative-time&quot;&gt;Feb 29, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:MemberEvent/3665022863</id>
+		<published>2016-02-19T14:32:27Z</published>
+		<updated>2016-02-19T14:32:27Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-stream-samples"/>
+		<title type="html">spring-cloud added markfisher to spring-cloud/spring-cloud-stream-samples</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- member --&gt;
+			&lt;div class=&quot;simple&quot;&gt;
+			&lt;svg aria-label=&quot;Member&quot; class=&quot;octicon octicon-person dashboard-event-icon&quot; height=&quot;16&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 8 16&quot; width=&quot;8&quot;&gt;&lt;path d=&quot;M7 6H1c-0.55 0-1 0.45-1 1v5h2v3c0 0.55 0.45 1 1 1h2c0.55 0 1-0.45 1-1V12h2V7c0-0.55-0.45-1-1-1z m0 5h-1V9h-1v6H3V9h-1v2H1V7h6v4z m0-8C7 1.34 5.66 0 4 0S1 1.34 1 3s1.34 3 3 3 3-1.34 3-3zM4 5c-1.11 0-2-0.89-2-2S2.89 1 4 1s2 0.89 2 2-0.89 2-2 2z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; added &lt;a href=&quot;/markfisher&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:member&quot;&gt;markfisher&lt;/a&gt; to &lt;a href=&quot;/spring-cloud/spring-cloud-stream-samples&quot; data-ga-click=&quot;News feed, event click, Event click type:MemberEvent target:repo&quot;&gt;spring-cloud/spring-cloud-stream-samples&lt;/a&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-02-19T14:32:27Z&quot; is=&quot;relative-time&quot;&gt;Feb 19, 2016&lt;/time&gt;
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+	<entry>
+		<id>tag:github.com,2008:PublicEvent/3624806713</id>
+		<published>2016-02-09T18:08:58Z</published>
+		<updated>2016-02-09T18:08:58Z</updated>
+		<link type="text/html" rel="alternate" href="https://github.com/spring-cloud/spring-cloud-stream-binder-gemfire"/>
+		<title type="html">spring-cloud made spring-cloud/spring-cloud-stream-binder-gemfire public</title>
+		<author>
+			<name>spring-cloud</name>
+			<email></email>
+			<uri>https://github.com/spring-cloud</uri>
+
+		</author>
+		<media:thumbnail height="30" width="30" url="https://avatars3.githubusercontent.com/u/7815877?v=3&amp;s=30"/>
+		<content type="html">&lt;!-- public --&gt;
+			&lt;svg aria-label=&quot;Public repository&quot; class=&quot;octicon octicon-repo dashboard-event-icon&quot; height=&quot;32&quot; role=&quot;img&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 12 16&quot; width=&quot;24&quot;&gt;&lt;path d=&quot;M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;
+
+			&lt;div class=&quot;time&quot;&gt;
+			&lt;time datetime=&quot;2016-02-09T18:08:58Z&quot; is=&quot;relative-time&quot;&gt;Feb 9, 2016&lt;/time&gt;
+			&lt;/div&gt;
+
+			&lt;div class=&quot;title&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot; data-ga-click=&quot;News feed, event click, Event click type:PublicEvent target:actor&quot;&gt;spring-cloud&lt;/a&gt; made &lt;a href=&quot;/spring-cloud/spring-cloud-stream-binder-gemfire&quot; data-ga-click=&quot;News feed, event click, Event click type:PublicEvent target:repo&quot;&gt;spring-cloud/spring-cloud-stream-binder-gemfire&lt;/a&gt; public
+			&lt;/div&gt;
+
+			&lt;div class=&quot;details&quot;&gt;
+			&lt;a href=&quot;/spring-cloud&quot;&gt;&lt;img alt=&quot;@spring-cloud&quot; class=&quot;gravatar&quot; height=&quot;30&quot; src=&quot;https://avatars2.githubusercontent.com/u/7815877?v=3&amp;amp;s=60&quot; width=&quot;30&quot; /&gt;&lt;/a&gt;
+			&lt;div class=&quot;message&quot;&gt;
+			Spring Cloud Stream Binder for GemFire
+			&lt;/div&gt;
+			&lt;/div&gt;
+		</content>
+
+	</entry>
+</feed>
