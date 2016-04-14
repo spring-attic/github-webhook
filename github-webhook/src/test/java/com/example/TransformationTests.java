@@ -25,7 +25,7 @@ public class TransformationTests {
 
 	@Test
 	public void noRepository() throws InterruptedException, IOException {
-		Resource resource = new ClassPathResource("/webhooks/no-repo.json");
+		Resource resource = new ClassPathResource("/github-webhook-input/hook-created.json");
 		String json = FileCopyUtils
 				.copyToString(new InputStreamReader(resource.getInputStream()));
 		Pojo pojo = this.transformer.transform(json);
