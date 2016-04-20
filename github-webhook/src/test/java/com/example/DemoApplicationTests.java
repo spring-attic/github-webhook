@@ -8,7 +8,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -35,23 +34,23 @@ public class DemoApplicationTests {
 
 	@Value("classpath:/github-webhook-input/issue-created.json") Resource issueCreatedInput;
 	@Value("classpath:/github-webhook-input/hook-created.json") Resource hookCreatedInput;
-	@Value("classpath:/github-webhook-output/issue-created.json") Resource issueCreatedOutput;
-	@Value("classpath:/github-webhook-output/hook-created.json") Resource hookCreatedOutput;
+	@Value("classpath:/github-webhook-output/v1/issue-created.json") Resource issueCreatedOutput;
+	@Value("classpath:/github-webhook-output/v1/hook-created.json") Resource hookCreatedOutput;
 
 	@Test
 	public void issueCreated() throws InterruptedException, IOException {
-		post(issueCreatedInput);
-		Message<?> message = messageCollector.forChannel(source.output()).poll(5, TimeUnit.SECONDS);
+		post(this.issueCreatedInput);
+		Message<?> message = this.messageCollector.forChannel(this.source.output()).poll(5, TimeUnit.SECONDS);
 		then(message).isNotNull();
-		then(message.getPayload()).isEqualTo(read(issueCreatedOutput));
+		then(message.getPayload()).isEqualTo(read(this.issueCreatedOutput));
 	}
 
 	@Test
 	public void hookCreated() throws InterruptedException, IOException {
-		post(hookCreatedInput);
-		Message<?> message = messageCollector.forChannel(source.output()).poll(5, TimeUnit.SECONDS);
+		post(this.hookCreatedInput);
+		Message<?> message = this.messageCollector.forChannel(this.source.output()).poll(5, TimeUnit.SECONDS);
 		then(message).isNotNull();
-		then(message.getPayload()).isEqualTo(read(hookCreatedOutput));
+		then(message.getPayload()).isEqualTo(read(this.hookCreatedOutput));
 	}
 
 	private void post(Resource resource) throws IOException {
