@@ -35,7 +35,27 @@ public class TransformerConfiguration {
 			repo = parsedJson.read(
 					JsonPath.builder().field("organization").field("login").jsonPath());
 		}
-		Pojo pojo = new Pojo(username, repo);
+		String type;
+		try {
+			System.err.println(JsonPath.builder().field("issue").jsonPath());
+			type = parsedJson.read("$.issue") != null ? "issue" : "unknown";
+		}
+		catch (PathNotFoundException e) {
+			try {
+				type = parsedJson.read("$.hook") != null ? "hook" : "unknown";
+			}
+			catch (PathNotFoundException ex) {
+				type = "unknown";
+			}
+		}
+		String action;
+		try {
+			action = parsedJson.read("$.action", String.class);
+		}
+		catch (Exception e) {
+			action = "updated";
+		}
+		Pojo pojo = new Pojo(username, repo, type, action);
 		this.source.output().send(MessageBuilder.withPayload(pojo).build());
 		return pojo;
 	}

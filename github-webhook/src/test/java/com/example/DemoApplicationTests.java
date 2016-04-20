@@ -34,8 +34,8 @@ public class DemoApplicationTests {
 
 	@Value("classpath:/github-webhook-input/issue-created.json") Resource issueCreatedInput;
 	@Value("classpath:/github-webhook-input/hook-created.json") Resource hookCreatedInput;
-	@Value("classpath:/github-webhook-output/v1/issue-created.json") Resource issueCreatedOutput;
-	@Value("classpath:/github-webhook-output/v1/hook-created.json") Resource hookCreatedOutput;
+	@Value("classpath:/github-webhook-output/v2/issue-created.json") Resource issueCreatedOutput;
+	@Value("classpath:/github-webhook-output/v2/hook-created.json") Resource hookCreatedOutput;
 
 	@Test
 	public void issueCreated() throws InterruptedException, IOException {
