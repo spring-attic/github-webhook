@@ -1,11 +1,10 @@
 package com.example;
 
-import static org.assertj.core.api.BDDAssertions.then;
-
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.concurrent.TimeUnit;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,9 +23,12 @@ import org.springframework.messaging.Message;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.FileCopyUtils;
 
+import static org.assertj.core.api.BDDAssertions.then;
+
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = DemoApplication.class)
 @WebIntegrationTest
+@Ignore
 public class DemoApplicationTests {
 
 	@Autowired MessageCollector messageCollector;
