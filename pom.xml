@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.springframework.github</groupId>
@@ -39,6 +39,27 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+
+
+	<distributionManagement>
+
+		<site>
+			<id>static.springframework.org</id>
+			<url>scp://static.springframework.org/var/www/domains/springframework.org/static/htdocs/spring-security/rsa</url>
+		</site>
+
+		<!--<repository>-->
+		<!--<id>repo.spring.io</id>-->
+		<!--<name>Spring Release Repository</name>-->
+		<!--<url>https://repo.spring.io/libs-release-local</url>-->
+		<!--</repository>-->
+		<snapshotRepository>
+			<id>repo.spring.io</id>
+			<name>Spring Snapshot Repository</name>
+			<url>https://repo.spring.io/libs-snapshot-local</url>
+		</snapshotRepository>
+
+	</distributionManagement>
 
 	<repositories>
 		<repository>
