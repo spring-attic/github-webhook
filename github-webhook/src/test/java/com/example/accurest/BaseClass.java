@@ -1,8 +1,11 @@
 package com.example.accurest;
 
-import com.example.DemoApplication;
-import com.example.TransformerConfiguration;
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.concurrent.TimeUnit;
+
+import javax.inject.Inject;
+
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,8 +15,11 @@ import org.springframework.core.io.Resource;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.FileCopyUtils;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
+import com.example.DemoApplication;
+import com.example.TransformerConfiguration;
+import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
+
+import io.codearte.accurest.messaging.AccurestMessaging;
 
 /**
  * @author Marcin Grzejszczak
@@ -23,6 +29,7 @@ import java.io.InputStreamReader;
 public class BaseClass {
 
 	@Autowired TransformerConfiguration transformerConfiguration;
+	@Inject AccurestMessaging messaging;
 
 	@Value("classpath:/github-webhook-input/issue-created.json") Resource issueCreatedInput;
 	@Value("classpath:/github-webhook-input/hook-created.json") Resource hookCreatedInput;
@@ -30,6 +37,7 @@ public class BaseClass {
 	@Before
 	public void setup() {
 		RestAssuredMockMvc.standaloneSetup(transformerConfiguration);
+		messaging.receiveMessage("output", 100, TimeUnit.MILLISECONDS);
 	}
 
 	public void createHook() throws IOException  {
