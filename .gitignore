@@ -14,8 +14,8 @@ _site/
 .factorypath
 *.logtjmeter
 .checkstyle
-.DS_Store
 .log
+.DS_Store
 /spring-cloud-sleuth-core/nb-configuration.xml
 /spring-cloud-sleuth-core/nbactions.xml
 .mvn
