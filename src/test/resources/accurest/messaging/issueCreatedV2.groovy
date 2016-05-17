@@ -11,7 +11,7 @@ io.codearte.accurest.dsl.GroovyDsl.make {
 	// output message of the contract
 	outputMessage {
 		// destination to which the output message will be sent
-		sentTo $(consumer('input'), producer('output'))
+		sentTo 'messages'
 		// the body of the output message
 		body('''{"username":"smithapitla","repository":"spring-cloud/spring-cloud-netflix","type":"issue","action":"created"}''')
 		// the headers of the output message

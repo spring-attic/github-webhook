@@ -57,7 +57,7 @@
 		<dependency>
 			<groupId>io.codearte.accurest</groupId>
 			<artifactId>accurest-messaging-stream</artifactId>
-			<version>1.0.7</version>
+			<version>1.1.0-M6</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
@@ -73,7 +73,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.RC1</version>
+				<version>Brixton.RELEASE</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -156,7 +156,7 @@
 						<dependency>
 							<groupId>io.codearte.accurest</groupId>
 							<artifactId>accurest-core</artifactId>
-							<version>1.1.0-M3</version>
+							<version>1.1.0-M6</version>
 						</dependency>
 						<dependency>
 							<groupId>com.toomuchcoding.jsonassert</groupId>
@@ -165,6 +165,7 @@
 						</dependency>
 					</dependencies>
 					<configuration>
+						 <contractsDirectory>src/test/resources/accurest</contractsDirectory>
 						<basePackageForTests>accurest</basePackageForTests>
 						<baseClassForTests>com.example.accurest.BaseClass</baseClassForTests>
 					</configuration>
