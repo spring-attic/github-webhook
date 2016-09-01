@@ -1,6 +1,6 @@
 package rest
 
-io.codearte.accurest.dsl.GroovyDsl.make {
+org.springframework.cloud.contract.spec.Contract.make {
 	request {
 		method 'POST'
 		url '/'

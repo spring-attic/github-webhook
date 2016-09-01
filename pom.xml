@@ -14,29 +14,30 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.3.RELEASE</version>
+		<version>1.4.0.RELEASE</version>
 		<relativePath/>
 	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<accurest-plugin.version>0.5.10</accurest-plugin.version>
+		<spring-cloud-contract.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 	</properties>
 
 	<dependencies>
+		<!-- To parse the input JSON in compile time -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
+			<groupId>com.toomuchcoding.jsonassert</groupId>
+			<artifactId>jsonassert</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.toomuchcoding.jsonassert</groupId>
-			<artifactId>jsonassert</artifactId>
-			<version>0.4.1</version>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-stream-test-support</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -45,25 +46,12 @@
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-stream-test-support</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.assertj</groupId>
-			<artifactId>assertj-core</artifactId>
-			<version>2.1.0</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>io.codearte.accurest</groupId>
-			<artifactId>accurest-messaging-stream</artifactId>
-			<version>1.1.0-M6</version>
+			<artifactId>spring-cloud-contract-verifier</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.jayway.restassured</groupId>
 			<artifactId>spring-mock-mvc</artifactId>
-			<version>2.9.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -72,8 +60,15 @@
 		<dependencies>
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-contract-dependencies</artifactId>
+				<version>${spring-cloud-contract.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>Brixton.RELEASE</version>
+				<version>Camden.M1</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -82,25 +77,11 @@
 
 
 	<distributionManagement>
-
-		<site>
-			<id>static.springframework.org</id>
-			<url>
-				scp://static.springframework.org/var/www/domains/springframework.org/static/htdocs/spring-security/rsa
-			</url>
-		</site>
-
-		<!--<repository>-->
-		<!--<id>repo.spring.io</id>-->
-		<!--<name>Spring Release Repository</name>-->
-		<!--<url>https://repo.spring.io/libs-release-local</url>-->
-		<!--</repository>-->
 		<snapshotRepository>
 			<id>repo.spring.io</id>
 			<name>Spring Snapshot Repository</name>
 			<url>https://repo.spring.io/libs-snapshot-local</url>
 		</snapshotRepository>
-
 	</distributionManagement>
 
 	<repositories>
@@ -133,44 +114,14 @@
 				<artifactId>git-commit-id-plugin</artifactId>
 			</plugin>
 			<plugin>
-				<groupId>io.codearte.accurest</groupId>
-				<artifactId>accurest-maven-plugin</artifactId>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-contract-maven-plugin</artifactId>
+				<version>${spring-cloud-contract.version}</version>
+				<extensions>true</extensions>
+				<configuration>
+					<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
+				</configuration>
 			</plugin>
 		</plugins>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>io.codearte.accurest</groupId>
-					<artifactId>accurest-maven-plugin</artifactId>
-					<version>${accurest-plugin.version}</version>
-					<executions>
-						<execution>
-							<goals>
-								<goal>convert</goal>
-								<goal>generateStubs</goal>
-								<goal>generateTests</goal>
-							</goals>
-						</execution>
-					</executions>
-					<dependencies>
-						<dependency>
-							<groupId>io.codearte.accurest</groupId>
-							<artifactId>accurest-core</artifactId>
-							<version>1.1.0-M6</version>
-						</dependency>
-						<dependency>
-							<groupId>com.toomuchcoding.jsonassert</groupId>
-							<artifactId>jsonassert</artifactId>
-							<version>0.4.1</version>
-						</dependency>
-					</dependencies>
-					<configuration>
-						 <contractsDirectory>src/test/resources/accurest</contractsDirectory>
-						<basePackageForTests>accurest</basePackageForTests>
-						<baseClassForTests>com.example.accurest.BaseClass</baseClassForTests>
-					</configuration>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 </project>

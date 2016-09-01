@@ -1,8 +1,8 @@
 package com.example;
 
-import com.jayway.jsonpath.DocumentContext;
-import com.jayway.jsonpath.PathNotFoundException;
-import com.toomuchcoding.jsonassert.JsonPath;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.messaging.MessageHeaders;
@@ -12,8 +12,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.PathNotFoundException;
+import com.toomuchcoding.jsonassert.JsonPath;
 
 /**
  * @author Marcin Grzejszczak
@@ -29,7 +30,7 @@ public class TransformerConfiguration {
 		DocumentContext parsedJson = com.jayway.jsonpath.JsonPath.parse(message);
 		String username = parsedJson
 				.read(JsonPath.builder().field("sender").field("login").jsonPath());
-		String repo = null;
+		String repo;
 		try {
 			repo = parsedJson.read(
 					JsonPath.builder().field("repository").field("full_name").jsonPath());

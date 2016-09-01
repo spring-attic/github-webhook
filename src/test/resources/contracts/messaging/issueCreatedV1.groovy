@@ -1,4 +1,4 @@
-io.codearte.accurest.dsl.GroovyDsl.make {
+org.springframework.cloud.contract.spec.Contract.make {
 	// Human readable description
 	description 'Some description'
 	// Label by means of which the output message can be triggered
