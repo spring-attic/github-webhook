@@ -1,0 +1,2 @@
+# From command line
+spring.rabbitmq.addresses: ${vcap.services.rabbitmq.credentials.uri}

@@ -1,0 +1,8 @@
+---
+applications:
+- name: github-webhook
+  services:
+    - rabbitmq
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
