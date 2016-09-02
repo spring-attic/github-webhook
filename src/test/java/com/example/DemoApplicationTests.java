@@ -9,9 +9,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.boot.test.TestRestTemplate;
-import org.springframework.boot.test.WebIntegrationTest;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.stream.messaging.Source;
 import org.springframework.cloud.stream.test.binder.MessageCollector;
 import org.springframework.core.io.Resource;
@@ -26,8 +25,8 @@ import org.springframework.util.FileCopyUtils;
 import static org.assertj.core.api.BDDAssertions.then;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = DemoApplication.class)
-@WebIntegrationTest
+@SpringBootTest(classes = DemoApplication.class,
+		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Ignore
 public class DemoApplicationTests {
 
