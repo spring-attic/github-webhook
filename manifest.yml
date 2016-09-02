@@ -3,6 +3,7 @@ applications:
 - name: github-webhook
   services:
     - rabbitmq
+    - eureka
   env:
     SPRING_PROFILES_ACTIVE: cloud
     DEBUG: "true"
