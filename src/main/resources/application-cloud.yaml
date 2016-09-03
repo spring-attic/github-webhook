@@ -1,2 +1,2 @@
 # TODO: From command line
-spring.rabbitmq.addresses: ${vcap.services.rabbitmq.credentials.uri}
+spring.rabbitmq.addresses: ${vcap.services.github-rabbitmq.credentials.uri}
