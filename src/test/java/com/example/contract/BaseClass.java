@@ -2,6 +2,7 @@ package com.example.contract;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 
@@ -17,6 +18,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.FileCopyUtils;
 
 import com.example.DemoApplication;
+import com.example.Pojo;
+import com.example.TestDbAccessor;
 import com.example.TransformerConfiguration;
 import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
 
@@ -38,6 +41,11 @@ public class BaseClass {
 	public void setup() {
 		RestAssuredMockMvc.standaloneSetup(transformerConfiguration);
 		this.messaging.receive("output", 100, TimeUnit.MILLISECONDS);
+		TestDbAccessor.getPojos().clear();
+		TestDbAccessor.getPojos().addAll(Arrays.asList(
+						new Pojo("dsyer", "spring-cloud-samples", "hook", "updated"),
+						new Pojo("smithapitla", "spring-cloud/spring-cloud-netflix", "issue", "created"))
+		);
 	}
 
 	public void createHook() throws IOException  {
