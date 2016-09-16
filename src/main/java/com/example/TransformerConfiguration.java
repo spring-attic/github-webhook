@@ -72,8 +72,8 @@ public class TransformerConfiguration {
 	}
 
 	@GetMapping(value = "/")
-	public List<Pojo> pojos() {
-		return DATABASE;
+	public Pojos pojos() {
+		return new Pojos(DATABASE);
 	}
 
 
