@@ -24,8 +24,8 @@
 		<version>0.0.1.M1</version>
 		<spring-cloud-contract.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-bom.version>Camden.BUILD-SNAPSHOT</spring-cloud-bom.version>
-		<distribution.management.release.id>repo.spring.io</distribution.management.release.id>
-		<distribution.management.release.url>https://repo.spring.io/libs-milestone-local</distribution.management.release.url>
+		<distribution.management.release.id>artifactory-local</distribution.management.release.id>
+		<distribution.management.release.url>https://localhost:8081/libs-release-local</distribution.management.release.url>g
 	</properties>
 
 	<dependencies>
