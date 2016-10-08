@@ -1,4 +1,4 @@
-package integration;
+package smoke;
 
 import java.lang.invoke.MethodHandles;
 
@@ -19,10 +19,10 @@ import static org.assertj.core.api.BDDAssertions.then;
  * @author Marcin Grzejszczak
  */
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = IntegrationTests.class,
+@SpringBootTest(classes = SmokeTests.class,
 		webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @EnableAutoConfiguration
-public class IntegrationTests {
+public class SmokeTests {
 
 	private static final Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass());
 
