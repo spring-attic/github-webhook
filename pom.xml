@@ -23,7 +23,9 @@
 		<java.version>1.8</java.version>
 		<spring-cloud-contract.version>1.0.0.BUILD-SNAPSHOT</spring-cloud-contract.version>
 		<spring-cloud-bom.version>Camden.BUILD-SNAPSHOT</spring-cloud-bom.version>
+		<!-- [PIPELINE] -->
 		<distribution.management.release.id>artifactory-local</distribution.management.release.id>
+		<!-- [PIPELINE] -->
 		<distribution.management.release.url>http://localhost:8081/artifactory/libs-release-local</distribution.management.release.url>
 	</properties>
 
@@ -71,6 +73,7 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<!-- [PIPELINE] -->
 	<distributionManagement>
 		<repository>
 			<id>${distribution.management.release.id}</id>
@@ -159,6 +162,7 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- [PIPELINE] -->
 		<profile>
 			<id>smoke</id>
 			<activation>
@@ -180,6 +184,7 @@
 				</plugins>
 			</build>
 		</profile>
+		<!-- [PIPELINE] -->
 		<profile>
 			<id>e2e</id>
 			<activation>
