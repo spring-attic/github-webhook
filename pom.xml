@@ -21,8 +21,8 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
-		<spring-cloud-contract.version>1.0.1.BUILD-SNAPSHOT</spring-cloud-contract.version>
-		<spring-cloud-bom.version>Camden.BUILD-SNAPSHOT</spring-cloud-bom.version>
+		<spring-cloud-contract.version>1.0.0.RELEASE</spring-cloud-contract.version>
+		<spring-cloud-bom.version>Camden.RELEASE</spring-cloud-bom.version>
 		<!-- [PIPELINE] -->
 		<distribution.management.release.id>artifactory-local</distribution.management.release.id>
 		<!-- [PIPELINE] -->
