@@ -8,6 +8,6 @@ import java.util.List;
 public class TestDbAccessor {
 
 	public static List<Pojo> getPojos() {
-		return TransformerConfiguration.DATABASE;
+		return TransformerController.DATABASE;
 	}
 }

@@ -1,10 +1,15 @@
 package com.example;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.PathNotFoundException;
+import com.toomuchcoding.jsonassert.JsonPath;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Source;
@@ -16,18 +21,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.jayway.jsonpath.DocumentContext;
-import com.jayway.jsonpath.PathNotFoundException;
-import com.toomuchcoding.jsonassert.JsonPath;
-
 /**
  * @author Marcin Grzejszczak
  */
 @RestController
-public class TransformerConfiguration {
+public class TransformerController {
 
 	@Autowired Source source;
 	static final List<Pojo> DATABASE = Collections.synchronizedList(new ArrayList<>());
+
+	@PostConstruct
+	public void simulateInitialState() {
+		DATABASE.add(new Pojo("test1", "test1/test1", "hook", "updated"));
+		DATABASE.add(new Pojo("test2", "test2/test2", "issue", "created"));
+	}
 
 	@RequestMapping(value = "/", method = RequestMethod.POST)
 	public Pojo transform(@RequestBody String message) {

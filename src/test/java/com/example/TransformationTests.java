@@ -15,7 +15,7 @@ import org.springframework.util.FileCopyUtils;
 
 public class TransformationTests {
 
-	private TransformerConfiguration transformer = new TransformerConfiguration();
+	private TransformerController transformer = new TransformerController();
 	private Source source = () -> new QueueChannel();
 
 	@Before

@@ -20,7 +20,7 @@ import org.springframework.util.FileCopyUtils;
 import com.example.DemoApplication;
 import com.example.Pojo;
 import com.example.TestDbAccessor;
-import com.example.TransformerConfiguration;
+import com.example.TransformerController;
 import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
 
 /**
@@ -31,7 +31,7 @@ import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
 @AutoConfigureMessageVerifier
 public class BaseClass {
 
-	@Autowired TransformerConfiguration transformerConfiguration;
+	@Autowired TransformerController transformerController;
 	@Inject MessageVerifier messaging;
 
 	@Value("classpath:/github-webhook-input/issue-created.json") Resource issueCreatedInput;
@@ -39,7 +39,7 @@ public class BaseClass {
 
 	@Before
 	public void setup() {
-		RestAssuredMockMvc.standaloneSetup(transformerConfiguration);
+		RestAssuredMockMvc.standaloneSetup(transformerController);
 		this.messaging.receive("output", 100, TimeUnit.MILLISECONDS);
 		TestDbAccessor.getPojos().clear();
 		TestDbAccessor.getPojos().addAll(Arrays.asList(
@@ -49,7 +49,7 @@ public class BaseClass {
 	}
 
 	public void createHook() throws IOException  {
-		this.transformerConfiguration.transform(read(hookCreatedInput));
+		this.transformerController.transform(read(hookCreatedInput));
 	}
 
 	public void createHookV2() throws IOException  {
@@ -57,7 +57,7 @@ public class BaseClass {
 	}
 
 	public void createIssue() throws IOException  {
-		this.transformerConfiguration.transform(read(issueCreatedInput));
+		this.transformerController.transform(read(issueCreatedInput));
 	}
 
 	public void createIssueV2() throws IOException  {
