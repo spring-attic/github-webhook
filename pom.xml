@@ -30,6 +30,10 @@
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
 		<!-- To parse the input JSON in compile time -->
 		<dependency>
 			<groupId>com.toomuchcoding.jsonassert</groupId>
