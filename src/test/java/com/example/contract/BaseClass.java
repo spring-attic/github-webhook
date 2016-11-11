@@ -43,8 +43,8 @@ public class BaseClass {
 		this.messaging.receive("output", 100, TimeUnit.MILLISECONDS);
 		TestDbAccessor.getPojos().clear();
 		TestDbAccessor.getPojos().addAll(Arrays.asList(
-						new Pojo("dsyer", "spring-cloud-samples", "hook", "updated"),
-						new Pojo("smithapitla", "spring-cloud/spring-cloud-netflix", "issue", "created"))
+						new Pojo("dsyer", "spring-cloud-samples", "hook", "updated", "d syer"),
+						new Pojo("smithapitla", "spring-cloud/spring-cloud-netflix", "issue", "created", "smith apitla"))
 		);
 	}
 
