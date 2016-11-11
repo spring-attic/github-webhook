@@ -32,8 +32,8 @@ public class TransformerController {
 
 	@PostConstruct
 	public void simulateInitialState() {
-		DATABASE.add(new Pojo("test1", "test1/test1", "hook", "updated"));
-		DATABASE.add(new Pojo("test2", "test2/test2", "issue", "created"));
+		DATABASE.add(new Pojo("test1", "test1/test1", "hook", "updated", "test one"));
+		DATABASE.add(new Pojo("test2", "test2/test2", "issue", "created", "test two"));
 	}
 
 	@RequestMapping(value = "/", method = RequestMethod.POST)
@@ -72,7 +72,11 @@ public class TransformerController {
 		catch (Exception e) {
 			action = "updated";
 		}
-		Pojo pojo = new Pojo(username, repo, type, action);
+
+		// @TODO: get this value from Github using ID
+		String userfullname = "unknown";
+		
+		Pojo pojo = new Pojo(username, repo, type, action, userfullname);
 		this.source.output().send(MessageBuilder.createMessage(pojo, new MessageHeaders(headers)));
 		DATABASE.add(pojo);
 		return pojo;
