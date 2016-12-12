@@ -2,9 +2,11 @@ package com.example;
 
 import static org.assertj.core.api.BDDAssertions.then;
 
+
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.cloud.stream.messaging.Source;
@@ -32,4 +34,8 @@ public class TransformationTests {
 		then(pojo).isNotNull();
 	}
 
+	@Test
+	public void thisTestWillFail() {
+		Assert.assertTrue(false);
+	}
 }
