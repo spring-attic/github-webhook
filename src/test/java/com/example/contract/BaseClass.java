@@ -61,7 +61,7 @@ public class BaseClass {
 	}
 
 	public void createIssueV2() throws IOException  {
-		createIssue();
+		//createIssue();
 	}
 
 	private String read(Resource resource) throws IOException {

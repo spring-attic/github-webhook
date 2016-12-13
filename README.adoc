@@ -1,3 +1,3 @@
 = GitHub Webhook
 
-GitHub Webhook app. Receives messages from GitHub and sends them to a message broker. Part of the deployment pipeline example
+GitHub Webhook app. Receives messages from GitHub and sends them to a message broker. Part of the deployment pipeline example.
