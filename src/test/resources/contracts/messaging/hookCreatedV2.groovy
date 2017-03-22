@@ -17,6 +17,7 @@ org.springframework.cloud.contract.spec.Contract.make {
 		// the headers of the output message
 		headers {
 			header('version', 'v2')
+			header('contentType', applicationJson())
 		}
 	}
 }

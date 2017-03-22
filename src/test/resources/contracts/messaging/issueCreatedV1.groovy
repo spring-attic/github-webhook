@@ -14,5 +14,8 @@ org.springframework.cloud.contract.spec.Contract.make {
 		sentTo 'messages'
 		// the body of the output message
 		body('''{"username":"smithapitla","repository":"spring-cloud/spring-cloud-netflix"}''')
+		headers {
+			header('contentType', applicationJson())
+		}
 	}
 }

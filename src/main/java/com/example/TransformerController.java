@@ -1,15 +1,11 @@
 package com.example;
 
-import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.jayway.jsonpath.DocumentContext;
-import com.jayway.jsonpath.PathNotFoundException;
-import com.toomuchcoding.jsonassert.JsonPath;
+import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.stream.messaging.Source;
@@ -20,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.jayway.jsonpath.DocumentContext;
+import com.jayway.jsonpath.PathNotFoundException;
+import com.toomuchcoding.jsonassert.JsonPath;
 
 /**
  * @author Marcin Grzejszczak
@@ -53,6 +53,7 @@ public class TransformerController {
 		String type;
 		Map<String, Object> headers = new HashMap<>();
 		headers.put("version", "v2");
+		headers.put(MessageHeaders.CONTENT_TYPE, "application/json");
 		try {
 			System.err.println(JsonPath.builder().field("issue").jsonPath());
 			type = parsedJson.read("$.issue") != null ? "issue" : "unknown";
@@ -73,7 +74,8 @@ public class TransformerController {
 			action = "updated";
 		}
 		Pojo pojo = new Pojo(username, repo, type, action);
-		this.source.output().send(MessageBuilder.createMessage(pojo, new MessageHeaders(headers)));
+		this.source.output().send(MessageBuilder
+				.createMessage(pojo, new MessageHeaders(headers)));
 		DATABASE.add(pojo);
 		return pojo;
 	}
