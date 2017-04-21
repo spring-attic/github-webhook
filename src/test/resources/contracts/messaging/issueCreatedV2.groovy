@@ -13,7 +13,7 @@ org.springframework.cloud.contract.spec.Contract.make {
 		// destination to which the output message will be sent
 		sentTo 'messages'
 		// the body of the output message
-		body('''{"username":"smithapitla","repository":"spring-cloud/spring-cloud-netflix","type":"issue","action":"created"}''')
+		body('''{"user":"smithapitla","repo":"spring-cloud","type":"issue","action":"created"}''')
 		// the headers of the output message
 		headers {
 			header('version', 'v2')

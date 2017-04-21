@@ -44,7 +44,7 @@ public class TransformerController {
 		String repo;
 		try {
 			repo = parsedJson.read(
-					JsonPath.builder().field("repository").field("full_name").jsonPath());
+					JsonPath.builder().field("repo").field("full_name").jsonPath());
 		}
 		catch (PathNotFoundException e) {
 			repo = parsedJson.read(

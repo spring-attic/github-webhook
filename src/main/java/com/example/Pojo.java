@@ -6,25 +6,25 @@ import com.fasterxml.jackson.annotation.JsonCreator;
  * @author Marcin Grzejszczak
  */
 public class Pojo {
-	private final String username;
-	private final String repository;
+	private final String user;
+	private final String repo;
 	private final String type;
 	private final String action;
 
 	@JsonCreator
-	public Pojo(String username, String repository, String type, String action) {
-		this.username = username;
-		this.repository = repository;
+	public Pojo(String user, String repo, String type, String action) {
+		this.user = user;
+		this.repo = repo;
 		this.type = type;
 		this.action = action;
 	}
 
-	public String getUsername() {
-		return this.username;
+	public String getUser() {
+		return this.user;
 	}
 
-	public String getRepository() {
-		return this.repository;
+	public String getRepo() {
+		return this.repo;
 	}
 
 	public String getType() {

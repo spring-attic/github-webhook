@@ -13,7 +13,7 @@ org.springframework.cloud.contract.spec.Contract.make {
 		// destination to which the output message will be sent
 		sentTo 'messages'
 		// the body of the output message
-		body('''{"username":"smithapitla","repository":"spring-cloud/spring-cloud-netflix"}''')
+		body('''{"user":"smithapitla","repo":"spring-cloud"}''')
 		headers {
 			header('contentType', applicationJson())
 		}

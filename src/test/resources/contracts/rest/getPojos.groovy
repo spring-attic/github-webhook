@@ -9,14 +9,14 @@ org.springframework.cloud.contract.spec.Contract.make {
 		status 200
 		body([ data: [
 				[
-					username:"dsyer",
-					repository:"spring-cloud-samples",
+					user:"dsyer",
+					repo:"spring-cloud-samples",
 					type:"hook",
 					action:"updated"
 				],
 				[
-					username:"smithapitla",
-					repository:"spring-cloud/spring-cloud-netflix",
+					user:"smithapitla",
+					repo:"spring-cloud/spring-cloud-netflix",
 					type:"issue",
 					action:"created"
 				]
