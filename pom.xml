@@ -161,7 +161,7 @@
 								<groupId>${project.groupId}</groupId>
 								<artifactId>${project.artifactId}</artifactId>
 								<classifier>stubs</classifier>
-								<version>${stubsProductionVersion}</version>
+								<version>${latest.production.version}</version>
 							</contractDependency>
 							<contractsPath>/</contractsPath>
 							<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
