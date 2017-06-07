@@ -109,9 +109,13 @@
 						<version>2.18.1</version>
 						<configuration>
 							<includes>
-								<include>com/**/*Tests.java</include>
-								<include>com/**/*Test.java</include>
+								<include>**/*Tests.java</include>
+								<include>**/*Test.java</include>
 							</includes>
+							<excludes>
+								<exclude>**/smoke/**</exclude>
+								<exclude>**/e2e/**</exclude>
+							</excludes>
 						</configuration>
 					</plugin>
 					<plugin>
@@ -125,7 +129,7 @@
 						<extensions>true</extensions>
 						<configuration>
 							<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
-							<basePackageForTests>com.example</basePackageForTests>
+							<basePackageForTests>com.example.contracttests</basePackageForTests>
 						</configuration>
 					</plugin>
 				</plugins>
@@ -145,8 +149,8 @@
 						<version>2.18.1</version>
 						<configuration>
 							<includes>
-								<include>**/com/example/contracts/**/*Tests.java</include>
-								<include>**/com/example/contracts/**/*Test.java</include>
+								<include>**/contracttests/**/*Tests.java</include>
+								<include>**/contracttests/**/*Test.java</include>
 							</includes>
 						</configuration>
 					</plugin>
@@ -165,7 +169,7 @@
 							</contractDependency>
 							<contractsPath>/</contractsPath>
 							<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
-							<basePackageForTests>com.example</basePackageForTests>
+							<basePackageForTests>com.example.contracttests</basePackageForTests>
 						</configuration>
 					</plugin>
 				</plugins>
