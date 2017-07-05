@@ -17,3 +17,5 @@ _site/
 .log
 .DS_Store
 *.versionsBackup
+effective.pom
+*.log

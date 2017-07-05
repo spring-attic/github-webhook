@@ -30,6 +30,10 @@
 		<distribution.management.release.url>http://localhost:8081/artifactory/libs-release-local</distribution.management.release.url>
 		<!-- [PIPELINE] -->
 		<repo.with.jars>http://localhost:8081/artifactory/libs-release-local</repo.with.jars>
+		<!-- KUBERNETES -->
+		<docker.image.prefix>mgrzejszczak</docker.image.prefix>
+		<docker.server.id>docker-repo</docker.server.id>
+		<docker.registry.url>hub.docker.com</docker.registry.url>
 	</properties>
 
 	<dependencies>
@@ -131,6 +135,47 @@
 							<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
 							<basePackageForTests>com.example.contracttests</basePackageForTests>
 						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>com.spotify</groupId>
+						<artifactId>docker-maven-plugin</artifactId>
+						<version>0.4.11</version>
+						<configuration>
+							<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+							<baseImage>frolvlad/alpine-oraclejdk8:slim</baseImage>
+							<entryPoint>["sh", "-c", "java -Djava.security.egd=file:/dev/./urandom -jar /${project.build.finalName}.jar"]</entryPoint>
+							<resources>
+								<resource>
+									<targetPath>/</targetPath>
+									<directory>${project.build.directory}</directory>
+									<include>${project.build.finalName}.jar</include>
+								</resource>
+							</resources>
+							<serverId>${docker.server.id}</serverId>
+						</configuration>
+						<executions>
+							<execution>
+								<id>tag-image</id>
+								<phase>package</phase>
+								<goals>
+									<goal>tag</goal>
+								</goals>
+								<configuration>
+									<image>${project.artifactId}:${project.version}</image>
+									<newName>${docker.registry.url}/${docker.image.prefix}/${project.artifactId}:${project.version}</newName>
+								</configuration>
+							</execution>
+							<execution>
+								<id>push-image</id>
+								<phase>deploy</phase>
+								<goals>
+									<goal>push</goal>
+								</goals>
+								<configuration>
+									<imageName>${docker.registry.url}/${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
+								</configuration>
+							</execution>
+						</executions>
 					</plugin>
 				</plugins>
 			</build>

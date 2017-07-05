@@ -1,3 +1,43 @@
 = GitHub Webhook
 
 GitHub Webhook app. Receives messages from GitHub and sends them to a message broker. Part of the deployment pipeline example
+
+== Docker integration
+
+For more information please read the https://spring.io/guides/gs/spring-boot-docker/[guides].
+
+=== Building docker image
+
+```bash
+$  ./mvnw package docker:build
+```
+
+=== Setting authentication for Docker
+
+Go to your `~/.m2/settings.xml` and add the server with id `docker-repo`
+
+```xml
+<server>
+  <id>docker-repo</id>
+  <username>username</username>
+  <password>password</password>
+  <configuration>
+    <email>your@email.com</email>
+  </configuration>
+</server>
+```
+
+=== Pushing docker image
+
+IMPORTANT: Remember to set authentication in your `settings.xml`
+
+```bash
+$  ./mvnw package docker:build -DpushImage
+```
+
+or
+
+```bash
+$  ./mvnw deploy
+```
+
