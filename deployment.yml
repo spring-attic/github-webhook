@@ -13,4 +13,4 @@ spec:
         - name: github-webhook
           image: mgrzejszczak/github-webhook
           ports:
-          - containerPort: 8080
+          - containerPort: 8082
