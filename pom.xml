@@ -152,20 +152,12 @@
 								</resource>
 							</resources>
 							<serverId>${docker.server.id}</serverId>
+							<imageTags>
+								<imageTag>${project.version}</imageTag>
+								<imageTag>latest</imageTag>
+							</imageTags>
 						</configuration>
 						<executions>
-							<!-- TODO: Fix tagging of repos-->
-							<!--<execution>-->
-								<!--<id>tag-image</id>-->
-								<!--<phase>package</phase>-->
-								<!--<goals>-->
-									<!--<goal>tag</goal>-->
-								<!--</goals>-->
-								<!--<configuration>-->
-									<!--<image>${project.artifactId}:${project.version}</image>-->
-									<!--<newName>${docker.registry.url}/${docker.image.prefix}/${project.artifactId}:${project.version}</newName>-->
-								<!--</configuration>-->
-							<!--</execution>-->
 							<execution>
 								<id>push-image</id>
 								<phase>deploy</phase>
