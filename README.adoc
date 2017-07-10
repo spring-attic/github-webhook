@@ -45,36 +45,55 @@ $  ./mvnw deploy
 
 - First create and push the docker image
 +
-```
+```bash
 $ ./mvnw package docker:build -DpushImage
 ```
 - Start `minikube`
 +
-```
+```bash
 $ minikube start
 ```
 - Start Kubernetes Dashboard
 +
-```
+```bash
 $ minikube dashboard
 ```
 - Create this deployment on the cluster using kubectl
 +
-```
-kubectl create -f deployment.yml
+```bash
+$ kubectl create -f deployment.yml
 ```
 - Check if deployment is there
 +
-```
+```bash
 kubectl describe deployment github-webhook-deployment
 ```
 - Create a service to expose the pod to the outside world
 +
-```
+```bash
 $ kubectl create -f service.yml
 ```
 - Check if service has properly been created
 +
-```
+```bash
 $ kubectl describe service github-webhook-service
+```
+- Retrieve the URL from minikube
++
+```bash
+$ minikube service github-webhook-service --url
+```
+- Or go directly to the URL
++
+```bash
+$ minikube service github-webhook-service
+```
+
+== Deleting deployments / services
+
+It's enough to call `kubectl delete` to delete deployment / service
+
+```bash
+$ kubectl delete deployment github-webhook-deployment
+$ kubectl delete service github-webhook-service
 ```

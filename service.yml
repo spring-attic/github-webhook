@@ -4,8 +4,7 @@ metadata:
   name: github-webhook-service
 spec:
   ports:
-    - port: 8082
-      targetPort: 8082
+    - port: 8080
   selector:
     app: github-webhook
   type: NodePort
