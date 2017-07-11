@@ -164,9 +164,6 @@
 								<goals>
 									<goal>push</goal>
 								</goals>
-								<configuration>
-									<imageName>${docker.registry.url}/${docker.image.prefix}/${project.artifactId}:${project.version}</imageName>
-								</configuration>
 							</execution>
 						</executions>
 					</plugin>
