@@ -31,7 +31,7 @@
 		<!-- [PIPELINE] -->
 		<repo.with.jars>http://localhost:8081/artifactory/libs-release-local</repo.with.jars>
 		<!-- KUBERNETES -->
-		<docker.image.prefix>mgrzejszczak</docker.image.prefix>
+		<docker.image.prefix>scpipelines</docker.image.prefix>
 		<docker.server.id>docker-repo</docker.server.id>
 		<docker.registry.url>hub.docker.com</docker.registry.url>
 	</properties>
