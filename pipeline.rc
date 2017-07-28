@@ -1,5 +1,8 @@
 # Needed for Stub Runner deployment. If you don't want to use
 # either of these applications just don't declare that variable
+
+#TODO: Actually this should be automatically taken from the
+# test_services
 export UNIQUE_RABBIT_NAME="rabbitmq-github-webhook"
 export UNIQUE_EUREKA_NAME="eureka-github-webhook"
 
