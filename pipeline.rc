@@ -1,13 +1,13 @@
 # Needed for Stub Runner deployment. If you don't want to use
 # either of these applications just don't declare that variable
-UNIQUE_RABBIT_NAME="rabbitmq-github-webhook"
-UNIQUE_EUREKA_NAME="eureka-github-webhook"
+export UNIQUE_RABBIT_NAME="rabbitmq-github-webhook"
+export UNIQUE_EUREKA_NAME="eureka-github-webhook"
 
-TEST_SERVICES="rabbitmq:${UNIQUE_RABBIT_NAME} \
+export TEST_SERVICES="rabbitmq:${UNIQUE_RABBIT_NAME} \
 mysql:mysql-github-webhook \
 eureka:${UNIQUE_EUREKA_NAME} \
 stubrunner:stubrunner-github-webhook"
 
-STAGE_SERVICES="rabbitmq:rabbitmq-github \
+export STAGE_SERVICES="rabbitmq:rabbitmq-github \
 mysql:mysql-github \
 eureka:github-eureka"
