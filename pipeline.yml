@@ -1,18 +1,18 @@
 test:
   services:
+    - type: eureka
+      name: eureka-github-webhook
     - type: rabbitmq
       name: rabbitmq-github-webhook
     - type: mysql
       name: mysql-github-webhook
-    - type: eureka
-      name: eureka-github-webhook
     - type: stubrunner
       name: stubrunner-github-webhook
 stage:
   services:
+    - type: eureka
+      name: github-eureka
     - type: rabbitmq
       name: rabbitmq-github
     - type: mysql
       name: mysql-github
-    - type: eureka
-      name: github-eureka
