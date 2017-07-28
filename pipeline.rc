@@ -1,0 +1,8 @@
+export TEST_SERVICES="rabbitmq:rabbitmq-github-webhook \
+mysql:mysql-github-webhook \
+eureka:eureka-github-webhook \
+stubrunner:stubrunner-github-webhook"
+
+export STAGE_SERVICES="rabbitmq:rabbitmq-github \
+mysql:mysql-github \
+eureka:github-eureka"
