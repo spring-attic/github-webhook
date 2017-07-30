@@ -30,7 +30,7 @@
 		<distribution.management.snapshot.url>http://localhost:8081/artifactory/libs-snapshot-local</distribution.management.snapshot.url>
 		<distribution.management.release.url>http://localhost:8081/artifactory/libs-release-local</distribution.management.release.url>
 		<!-- [PIPELINE] -->
-		<repo.with.jars>http://localhost:8081/artifactory/libs-release-local</repo.with.jars>
+		<repo.with.binaries>http://localhost:8081/artifactory/libs-release-local</repo.with.binaries>
 	</properties>
 
 	<dependencies>
@@ -161,7 +161,7 @@
 						<version>${spring-cloud-contract.version}</version>
 						<extensions>true</extensions>
 						<configuration>
-							<contractsRepositoryUrl>${repo.with.jars}</contractsRepositoryUrl>
+							<contractsRepositoryUrl>${repo.with.binaries}</contractsRepositoryUrl>
 							<contractDependency>
 								<groupId>${project.groupId}</groupId>
 								<artifactId>${project.artifactId}</artifactId>
