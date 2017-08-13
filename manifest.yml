@@ -2,7 +2,7 @@
 applications:
 - name: github-webhook
   services:
-    - rabbitmq-github
+    - github-rabbitmq
     - github-eureka
   env:
     SPRING_PROFILES_ACTIVE: cloud

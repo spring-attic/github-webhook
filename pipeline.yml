@@ -20,7 +20,7 @@ test:
 stage:
   services:
     - type: rabbitmq
-      name: rabbitmq-github
+      name: github-rabbitmq
     - type: mysql
       name: mysql-github
     - type: eureka
