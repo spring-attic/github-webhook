@@ -1,9 +1,8 @@
 package smoke;
 
-import java.lang.invoke.MethodHandles;
+import java.util.concurrent.TimeUnit;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.awaitility.Awaitility;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
@@ -24,19 +23,20 @@ import static org.assertj.core.api.BDDAssertions.then;
 @EnableAutoConfiguration
 public class SmokeTests {
 
-	private static final Log log = LogFactory.getLog(MethodHandles.lookup().lookupClass());
-
 	@Value("${stubrunner.url}") String stubRunnerUrl;
 	@Value("${application.url}") String applicationUrl;
+	@Value("${test.timeout:60}") Long timeout;
 
 	TestRestTemplate testRestTemplate = new TestRestTemplate();
 
 	@Test
 	public void shouldWork() {
-		ResponseEntity<String> entity = this.testRestTemplate
-				.getForEntity("http://" + this.applicationUrl + "/health", String.class);
+		Awaitility.await().atMost(this.timeout, TimeUnit.SECONDS).untilAsserted(() -> {
+			ResponseEntity<String> entity = this.testRestTemplate
+					.getForEntity("http://" + this.applicationUrl + "/health", String.class);
 
-		then(entity.getStatusCode().is2xxSuccessful()).isTrue();
+			then(entity.getStatusCode().is2xxSuccessful()).isTrue();
+		});
 	}
 
 }
