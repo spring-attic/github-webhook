@@ -6,23 +6,32 @@
 test:
   # list of required services
   services:
-    - type: rabbitmq
-      name: rabbitmq-github-webhook
-    - type: mysql
-      name: mysql-github-webhook
-    - type: eureka
-      name: eureka-github-webhook
+# for PCF Dev
+#    - name: github-rabbitmq
+#      type: broker
+#      broker: p-rabbitmq
+#      plan: standard
+    - name: github-rabbitmq
+      type: broker
+      broker: cloudamqp
+      plan: lemur
+    - name: github-eureka
+      type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
-    - type: stubrunner
-      name: stubrunner-github-webhook
-      coordinates: com.example.github:github-analytics-stub-runner-boot-classpath-stubs:0.0.1.M1
-      useClasspath: true
+      manifestPath: sc-pipelines/manifest-eureka.yml
+
 stage:
   services:
-    - type: rabbitmq
-      name: github-rabbitmq
-    - type: mysql
-      name: mysql-github
-    - type: eureka
-      name: github-eureka
+# for PCF Dev
+#    - name: github-rabbitmq
+#      type: broker
+#      broker: p-rabbitmq
+#      plan: standard
+    - name: github-rabbitmq
+      type: broker
+      broker: cloudamqp
+      plan: lemur
+    - name: github-eureka
+      type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
+      manifestPath: sc-pipelines/manifest-eureka.yml

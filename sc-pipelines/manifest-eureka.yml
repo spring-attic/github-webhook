@@ -1,0 +1,8 @@
+---
+applications:
+- name: github-eureka
+  services:
+    - github-rabbitmq
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+    DEBUG: "true"
