@@ -34,4 +34,4 @@ stage:
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
-      manifestPath: sc-pipelines/manifest-eureka.yml
+      pathToManifest: sc-pipelines/manifest-eureka.yml
