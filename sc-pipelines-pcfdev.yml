@@ -8,8 +8,8 @@ test:
   services:
     - name: github-rabbitmq
       type: broker
-      broker: cloudamqp
-      plan: lemur
+      broker: p-rabbitmq
+      plan: standard
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
@@ -19,8 +19,8 @@ stage:
   services:
     - name: github-rabbitmq
       type: broker
-      broker: cloudamqp
-      plan: lemur
+      broker: p-rabbitmq
+      plan: standard
     - name: github-eureka
       type: app
       coordinates: com.example.eureka:github-eureka:0.0.1.M1
