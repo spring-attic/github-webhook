@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 
+import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.Before;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,6 @@ import com.example.DemoApplication;
 import com.example.Pojo;
 import com.example.TestDbAccessor;
 import com.example.TransformerController;
-import com.jayway.restassured.module.mockmvc.RestAssuredMockMvc;
 
 /**
  * @author Marcin Grzejszczak
