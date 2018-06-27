@@ -40,6 +40,11 @@
 		</dependency>
 		<!-- To parse the input JSON in compile time -->
 		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+		<!-- To parse the input JSON in compile time -->
+		<dependency>
 			<groupId>com.toomuchcoding.jsonassert</groupId>
 			<artifactId>jsonassert</artifactId>
 		</dependency>
