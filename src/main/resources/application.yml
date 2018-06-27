@@ -4,3 +4,6 @@ spring:
   cloud.stream.bindings.output:
     content-type: application/json
     destination: messages
+
+management.endpoints.web.exposure.include: "*"
+management.endpoints.web.base-path: /
