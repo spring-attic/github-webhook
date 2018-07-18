@@ -1,8 +1,8 @@
 # This file describes which services are required by this application
 # in order for the smoke tests on the TEST environment and end to end tests
 # on the STAGE environment to pass
-pipeline:
-  rollback_step: false
+#pipeline:
+#  rollback_step: false
 
 # lowercase name of the environment
 test:
