@@ -186,6 +186,7 @@
 							<contractsPath>/</contractsPath>
 							<baseClassForTests>com.example.contract.BaseClass</baseClassForTests>
 							<basePackageForTests>com.example.contracttests</basePackageForTests>
+							<contractsSnapshotSkipCheck>true</contractsSnapshotSkipCheck>
 						</configuration>
 					</plugin>
 				</plugins>
