@@ -123,6 +123,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire.version}</version>
 						<configuration>
+							<failIfNoTests>true</failIfNoTests>
 							<includes>
 								<include>**/*Tests.java</include>
 								<include>**/*Test.java</include>
@@ -163,6 +164,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire.version}</version>
 						<configuration>
+							<failIfNoTests>true</failIfNoTests>
 							<includes>
 								<include>**/contracttests/**/*Tests.java</include>
 								<include>**/contracttests/**/*Test.java</include>
@@ -205,6 +207,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire.version}</version>
 						<configuration>
+							<failIfNoTests>true</failIfNoTests>
 							<includes>
 								<include>smoke/**/*Tests.java</include>
 								<include>smoke/**/*Test.java</include>
@@ -227,6 +230,7 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<version>${maven-surefire.version}</version>
 						<configuration>
+							<failIfNoTests>true</failIfNoTests>
 							<includes>
 								<include>e2e/**/*Tests.java</include>
 								<include>e2e/**/*Test.java</include>
