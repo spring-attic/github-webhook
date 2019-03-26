@@ -152,7 +152,7 @@ org.springframework.cloud.contract.spec.Contract.make {
     "ssh_url": "git@github.com:spring-cloud/spring-cloud-netflix.git",
     "clone_url": "https://github.com/spring-cloud/spring-cloud-netflix.git",
     "svn_url": "https://github.com/spring-cloud/spring-cloud-netflix",
-    "homepage": "http://cloud.spring.io/spring-cloud-netflix/",
+    "homepage": "https://cloud.spring.io/spring-cloud-netflix/",
     "size": 6756,
     "stargazers_count": 333,
     "watchers_count": 333,
