@@ -17,7 +17,7 @@ org.springframework.cloud.contract.spec.Contract.make {
       "*"
     ],
     "config": {
-      "url": "http://github-webhook.cfapps.io/",
+      "url": "https://github-webhook.cfapps.io/",
       "content_type": "json",
       "insecure_ssl": "0"
     },
