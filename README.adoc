@@ -1,3 +1,5 @@
+# github-webhook is no longer actively maintained by VMware, Inc.
+
 = GitHub Webhook
 
 GitHub Webhook app. Receives messages from GitHub and sends them to a message broker. Part of the deployment pipeline example
